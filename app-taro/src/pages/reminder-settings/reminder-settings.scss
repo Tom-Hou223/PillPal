@@ -1,0 +1,218 @@
+.reminder-settings-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.content {
+  padding: 24rpx 32rpx;
+  padding-bottom: 80rpx;
+}
+
+.section {
+  margin-bottom: 32rpx;
+}
+
+.section-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 16rpx;
+  padding-left: 8rpx;
+
+  text {
+    font-size: 28rpx;
+    font-weight: 600;
+    color: #666;
+  }
+}
+
+// 单元格
+.cell-group {
+  background: #ffffff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.05);
+}
+
+.cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24rpx 32rpx;
+  min-height: 80rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &.cell-link {
+    cursor: pointer;
+
+    &:active {
+      background: #f8f9fa;
+    }
+  }
+}
+
+.cell-title {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.cell-value-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.cell-value {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.cell-arrow {
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.subscription-tag {
+  font-size: 22rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+  background: #f0f0f0;
+  color: #999;
+
+  &.subscribed {
+    background: #e8f5e9;
+    color: #27AE60;
+  }
+}
+
+.delete-icon {
+  font-size: 28rpx;
+  color: #e74c3c;
+}
+
+// 操作按钮
+.actions {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 48rpx;
+}
+
+.btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  cursor: pointer;
+
+  text {
+    font-size: 28rpx;
+    font-weight: 500;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &.btn-primary {
+    background: #27AE60;
+
+    text {
+      color: #fff;
+    }
+  }
+
+  &.btn-default {
+    background: #ffffff;
+    border: 1rpx solid #ddd;
+
+    text {
+      color: #333;
+    }
+  }
+}
+
+// Sheet
+.sheet-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sheet-container {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 32rpx 32rpx 0 0;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.sheet-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  position: relative;
+}
+
+.sheet-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.sheet-close {
+  position: absolute;
+  right: 32rpx;
+  font-size: 40rpx;
+  color: #999;
+  padding: 8rpx;
+  cursor: pointer;
+}
+
+.sheet-content {
+  padding: 16rpx 0;
+}
+
+.sheet-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28rpx 32rpx;
+  cursor: pointer;
+
+  &:active {
+    background: #f8f9fa;
+  }
+
+  &.active {
+    background: #f0faf4;
+
+    .sheet-item-label {
+      color: #27AE60;
+    }
+  }
+}
+
+.sheet-item-label {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.sheet-item-check {
+  font-size: 32rpx;
+  color: #27AE60;
+  font-weight: bold;
+}

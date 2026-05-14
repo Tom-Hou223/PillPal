@@ -1,0 +1,4 @@
+export declare class HistoryQueryDto {
+    page?: number;
+    limit?: number;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "app-taro",
+  "version": "1.0.0",
+  "description": "medhome - 家庭药品管理系统",
+  "scripts": {
+    "build:weapp": "set NODE_ENV=development&& taro build --type weapp",
+    "dev:weapp": "npm run build:weapp -- --watch"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "dependencies": {
+    "@tarojs/components": "3.6.38",
+    "@tarojs/react": "3.6.38",
+    "@tarojs/runtime": "3.6.38",
+    "@tarojs/shared": "^3.6.38",
+    "@tarojs/taro": "3.6.38",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "socket.io-client": "^4.7.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/runtime": "^7.8.0",
+    "@tarojs/cli": "3.6.38",
+    "@tarojs/plugin-framework-react": "3.6.38",
+    "@tarojs/plugin-platform-weapp": "3.6.38",
+    "@tarojs/webpack5-runner": "3.6.38",
+    "@types/react": "^18.0.0",
+    "babel-preset-taro": "3.6.38",
+    "typescript": "^5.1.0",
+    "webpack": "5.91.0"
+  }
+}

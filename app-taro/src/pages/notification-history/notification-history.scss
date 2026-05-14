@@ -1,0 +1,169 @@
+.notification-history-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.content {
+  padding: 24rpx 32rpx;
+  padding-bottom: 80rpx;
+}
+
+// 头部统计
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32rpx;
+  padding: 0 8rpx;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rpx;
+}
+
+.header-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-count {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.header-unread {
+  font-size: 24rpx;
+  color: #F39C12;
+}
+
+.clear-btn {
+  padding: 8rpx 20rpx;
+  border-radius: 24rpx;
+  background: #fff;
+  border: 1rpx solid #e0e0e0;
+  cursor: pointer;
+
+  &:active {
+    background: #f0f0f0;
+  }
+}
+
+.clear-btn-text {
+  font-size: 24rpx;
+  color: #e74c3c;
+}
+
+// 通知列表
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 28rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+
+  &:active {
+    background: #f8f9fa;
+  }
+
+  &.unread {
+    border-left: 6rpx solid #27AE60;
+  }
+}
+
+.notification-icon {
+  font-size: 36rpx;
+  line-height: 1;
+  width: 56rpx;
+  height: 56rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #f5f5f5;
+  border-radius: 50%;
+}
+
+.notification-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.notification-top {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  margin-bottom: 8rpx;
+}
+
+.notification-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.unread-dot {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #27AE60;
+  flex-shrink: 0;
+}
+
+.notification-content {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 8rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notification-time {
+  font-size: 22rpx;
+  color: #ccc;
+  display: block;
+}
+
+.notification-type {
+  flex-shrink: 0;
+  padding: 4rpx 16rpx;
+  border-radius: 8rpx;
+
+  text {
+    font-size: 22rpx;
+  }
+}
+
+// 空状态
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120rpx 0;
+}
+
+.empty-icon {
+  font-size: 80rpx;
+  margin-bottom: 16rpx;
+}
+
+.empty-text {
+  font-size: 28rpx;
+  color: #999;
+}

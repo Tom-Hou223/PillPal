@@ -1,0 +1,339 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  height: calc(0rpx + 88rpx);
+  padding-top: 0rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar-left {
+  position: absolute;
+  left: 0;
+  top: 0rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 88rpx;
+  padding-left: 32rpx;
+  z-index: 1;
+}
+
+.nav-bar-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0rpx;
+  height: 88rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-bar-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 60%;
+}
+
+.nav-bar-title text {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav-bar-right {
+  position: absolute;
+  right: 0;
+  top: 0rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 88rpx;
+  padding-right: 32rpx;
+  gap: 16rpx;
+  z-index: 1;
+}
+
+.nav-bar-button {
+  width: 64rpx;
+  height: 64rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8rpx;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: transparent;
+  color: #333333;
+  border: none;
+  font-size: 24rpx;
+  cursor: pointer;
+}
+
+.nav-bar-button:active {
+  background: #f0f0f0;
+}
+
+.nav-bar-button-icon {
+  font-size: 36rpx;
+  color: #333333;
+  font-weight: bold;
+}
+
+.nav-bar-button-text {
+  font-size: 24rpx;
+  color: #333333;
+}
+.notification-history-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.content {
+  padding: 24rpx 32rpx;
+  padding-bottom: 80rpx;
+}
+
+.notification-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32rpx;
+  padding: 0 8rpx;
+}
+
+.header-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 8rpx;
+}
+
+.header-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-count {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.header-unread {
+  font-size: 24rpx;
+  color: #F39C12;
+}
+
+.clear-btn {
+  padding: 8rpx 20rpx;
+  border-radius: 24rpx;
+  background: #fff;
+  border: 1rpx solid #e0e0e0;
+  cursor: pointer;
+}
+
+.clear-btn:active {
+  background: #f0f0f0;
+}
+
+.clear-btn-text {
+  font-size: 24rpx;
+  color: #e74c3c;
+}
+
+.notification-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16rpx;
+}
+
+.notification-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 28rpx;
+  -webkit-box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.notification-item:active {
+  background: #f8f9fa;
+}
+
+.notification-item.unread {
+  border-left: 6rpx solid #27AE60;
+}
+
+.notification-icon {
+  font-size: 36rpx;
+  line-height: 1;
+  width: 56rpx;
+  height: 56rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  background: #f5f5f5;
+  border-radius: 50%;
+}
+
+.notification-body {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+}
+
+.notification-top {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8rpx;
+  margin-bottom: 8rpx;
+}
+
+.notification-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.unread-dot {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #27AE60;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.notification-content {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 8rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notification-time {
+  font-size: 22rpx;
+  color: #ccc;
+  display: block;
+}
+
+.notification-type {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding: 4rpx 16rpx;
+  border-radius: 8rpx;
+}
+
+.notification-type text {
+  font-size: 22rpx;
+}
+
+.empty-state {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 120rpx 0;
+}
+
+.empty-icon {
+  font-size: 80rpx;
+  margin-bottom: 16rpx;
+}
+
+.empty-text {
+  font-size: 28rpx;
+  color: #999;
+}
