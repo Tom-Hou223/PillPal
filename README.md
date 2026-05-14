@@ -9,7 +9,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6)](https://www.typescriptlang.org/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1)](https://www.mysql.com/)
 
-**PillPal** 是一款面向家庭的常备药品智能管理小程序，支持药品库存管理、用药计划提醒、OCR 拍照识别、多家庭协作、微信推送通知等功能。
+**PillPal** 是一款面向家庭的常备药品管理小程序，支持药品库存管理、用药计划提醒、OCR 拍照识别、多家庭协作、微信推送通知等功能。
 
 ---
 
