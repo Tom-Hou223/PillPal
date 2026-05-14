@@ -373,7 +373,7 @@ users ──┬── family_user_roles ──┬── families
 
 ## 维护者
 
-**RayHo** — [项目地址](https://github.com/RayHo666/medhome)
+**RayHo** — [项目地址](https://github.com/Tom-Hou223/PillPal)
 
 ---
 

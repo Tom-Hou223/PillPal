@@ -115,18 +115,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   stripTrailing: function() { return /* binding */ stripTrailing; },
 /* harmony export */   window: function() { return /* binding */ window$1; }
 /* harmony export */ });
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(3453);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(5499);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropSet_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(4559);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(3145);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_toArray_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7695);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4467);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9874);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5501);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_wrapNativeSuper_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5579);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9394);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3029);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2901);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(3453);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(5499);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropSet_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(4559);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(3145);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_toArray_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7695);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4467);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9874);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5501);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_wrapNativeSuper_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5579);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9394);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3029);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2901);
 /* harmony import */ var _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1186);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(1635);
 /* provided dependency */ var requestAnimationFrame = __webpack_require__(7842)["requestAnimationFrame"];
@@ -324,9 +324,11 @@ function recordMutation(record) {
 }
 var MutationObserver$1 = /*#__PURE__*/function () {
   function MutationObserver(callback) {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, MutationObserver);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, MutationObserver);
     if (false) {} else {
-      if (false) {}
+      if (true) {
+        console.warn('[Taro Warning] 若要使用 MutationObserver，请在 Taro 编译配置中设置 \'mini.runtime.enableMutationObserver: true\'');
+      }
       this.core = {
         observe: _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .noop */ .lQ,
         disconnect: _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .noop */ .lQ,
@@ -334,7 +336,7 @@ var MutationObserver$1 = /*#__PURE__*/function () {
       };
     }
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(MutationObserver, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(MutationObserver, [{
     key: "observe",
     value: function observe() {
       var _this$core;
@@ -396,7 +398,7 @@ var incrementId = function incrementId() {
     var target = list.map(function (item) {
       return chatCodes[item];
     });
-    var res = String.fromCharCode.apply(String, (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(target));
+    var res = String.fromCharCode.apply(String, (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(target));
     var tailIdx = list.length - 1;
     list[tailIdx]++;
     while (list[tailIdx] > chatCodesLen) {
@@ -476,14 +478,14 @@ function getComponentsAlias() {
 var ClassList = /*#__PURE__*/function () {
   function ClassList(className, el) {
     var _this = this;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, ClassList);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, ClassList);
     this.tokenList = [];
     this.el = el;
     className.trim().split(/\s+/).forEach(function (token) {
       return _this.tokenList.push(token);
     });
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(ClassList, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(ClassList, [{
     key: "value",
     get: function get() {
       return this.toString();
@@ -586,11 +588,11 @@ var ClassList = /*#__PURE__*/function () {
 }();
 var EventSource = /*#__PURE__*/function (_Map) {
   function EventSource() {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, EventSource);
-    return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, EventSource, arguments);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, EventSource);
+    return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, EventSource, arguments);
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(EventSource, _Map);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(EventSource, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(EventSource, _Map);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(EventSource, [{
     key: "removeNode",
     value: function removeNode(child) {
       var sid = child.sid,
@@ -609,7 +611,7 @@ var EventSource = /*#__PURE__*/function (_Map) {
       });
     }
   }]);
-}(/*#__PURE__*/(0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_wrapNativeSuper_js__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A)(Map));
+}(/*#__PURE__*/(0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_wrapNativeSuper_js__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A)(Map));
 var eventSource = new EventSource();
 var env = {
   window:  false ? 0 : _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .EMPTY_OBJ */ .MZ,
@@ -632,11 +634,11 @@ function hydrate(node) {
   var nodeName = node.nodeName;
   var compileModeName = null;
   if (isText(node)) {
-    return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({
+    return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({
       sid: node.sid
     }, "v" /* Shortcuts.Text */, node.nodeValue), "nn" /* Shortcuts.NodeName */, ((_a = componentsAlias[nodeName]) === null || _a === void 0 ? void 0 : _a._num) || '8');
   }
-  var data = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, "nn" /* Shortcuts.NodeName */, nodeName), "sid", node.sid);
+  var data = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, "nn" /* Shortcuts.NodeName */, nodeName), "sid", node.sid);
   if (node.uid !== node.sid) {
     data.uid = node.uid;
   }
@@ -692,10 +694,10 @@ function hydrate(node) {
 }
 var TaroEventTarget = /*#__PURE__*/function () {
   function TaroEventTarget() {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroEventTarget);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroEventTarget);
     this.__handlers = {};
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroEventTarget, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroEventTarget, [{
     key: "addEventListener",
     value: function addEventListener(type, handler, options) {
       type = type.toLowerCase();
@@ -722,7 +724,7 @@ var TaroEventTarget = /*#__PURE__*/function () {
         }));
         return;
       }
-       false && 0;
+       true && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .warn */ .R8)(isCapture, 'Taro 暂未实现 event 的 capture 特性。');
       // 某些框架，如 PReact 有委托的机制，handler 始终是同一个函数
       // 这会导致多层停止冒泡失败：view -> view(handler.stop = false) -> view(handler.stop = true)
       // 这样解决：view -> view(handlerA.stop = false) -> view(handlerB.stop = false)
@@ -759,7 +761,7 @@ var TaroEventTarget = /*#__PURE__*/function () {
       var index = handlers.findIndex(function (item) {
         if (item === handler || item.oldHandler === handler) return true;
       });
-       false && 0;
+       true && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .warn */ .R8)(index === -1, "\u4E8B\u4EF6: '".concat(type, "' \u6CA1\u6709\u6CE8\u518C\u5728 DOM \u4E2D\uFF0C\u56E0\u6B64\u4E0D\u4F1A\u88AB\u79FB\u9664\u3002"));
       handlers.splice(index, 1);
     }
   }, {
@@ -778,8 +780,8 @@ var nodeId = incrementId();
 var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
   function TaroNode() {
     var _this3;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroNode);
-    _this3 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroNode);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroNode);
+    _this3 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroNode);
     _this3.parentNode = null;
     _this3.childNodes = [];
     _this3.hydrate = function (node) {
@@ -792,8 +794,8 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
     eventSource.set(_this3.sid, _this3);
     return _this3;
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroNode, _TaroEventTarget);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroNode, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroNode, _TaroEventTarget);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroNode, [{
     key: "updateChildNodes",
     value: function updateChildNodes(isClean) {
       var _this4 = this;
@@ -1263,7 +1265,7 @@ function enqueueUpdate(obj) {
   }
 }
 function setStyle(newVal, styleKey) {
-   false && 0;
+   true && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .warn */ .R8)((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .isString */ .Kg)(newVal) && newVal.length > PROPERTY_THRESHOLD, "Style \u5C5E\u6027 ".concat(styleKey, " \u7684\u503C\u6570\u636E\u91CF\u8FC7\u5927\uFF0C\u53EF\u80FD\u4F1A\u5F71\u54CD\u6E32\u67D3\u6027\u80FD\uFF0C\u8003\u8651\u4F7F\u7528 CSS \u7C7B\u6216\u5176\u5B83\u65B9\u6848\u66FF\u4EE3\u3002"));
   var old = this[styleKey];
   if (old === newVal) return;
   !this._pending && recordCss(this);
@@ -1305,12 +1307,12 @@ function isCssVariable(propertyName) {
 }
 var Style = /*#__PURE__*/function () {
   function Style(element) {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, Style);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, Style);
     this._element = element;
     this._usedStyleProp = new Set();
     this._value = {};
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(Style, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(Style, [{
     key: "setCssVariables",
     value: function setCssVariables(styleKey) {
       var _this7 = this;
@@ -1362,9 +1364,9 @@ var Style = /*#__PURE__*/function () {
         }
         // 可能存在 'background: url(http:x/y/z)' 的情况
         var _rule$split = rule.split(':'),
-          _rule$split2 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_toArray_js__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A)(_rule$split),
+          _rule$split2 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_toArray_js__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A)(_rule$split),
           propName = _rule$split2[0],
-          valList = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A)(_rule$split2).slice(1);
+          valList = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_arrayLikeToArray_js__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A)(_rule$split2).slice(1);
         var val = valList.join(':');
         if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .isUndefined */ .b0)(val)) {
           continue;
@@ -1459,8 +1461,8 @@ function following(el, root) {
 var TaroElement = /*#__PURE__*/function (_TaroNode) {
   function TaroElement() {
     var _this0;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroElement);
-    _this0 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroElement);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroElement);
+    _this0 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroElement);
     _this0.props = {};
     _this0.dataset = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .EMPTY_OBJ */ .MZ;
     _this0.nodeType = 1 /* NodeType.ELEMENT_NODE */;
@@ -1468,8 +1470,8 @@ var TaroElement = /*#__PURE__*/function (_TaroNode) {
     _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .hooks */ .JL.call('patchElement', _this0);
     return _this0;
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroElement, _TaroNode);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroElement, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroElement, _TaroNode);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroElement, [{
     key: "_stopPropagation",
     value: function _stopPropagation(event) {
       // eslint-disable-next-line @typescript-eslint/no-this-alias
@@ -1545,7 +1547,7 @@ var TaroElement = /*#__PURE__*/function (_TaroNode) {
       return text;
     },
     set: function set(text) {
-      (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropSet_js__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A)(TaroElement, "textContent", text, this, 1, 1);
+      (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropSet_js__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A)(TaroElement, "textContent", text, this, 1, 1);
     }
   }, {
     key: "hasAttribute",
@@ -1577,7 +1579,7 @@ var TaroElement = /*#__PURE__*/function (_TaroNode) {
   }, {
     key: "setAttribute",
     value: function setAttribute(qualifiedName, value) {
-       false && 0;
+       true && (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .warn */ .R8)((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .isString */ .Kg)(value) && value.length > PROPERTY_THRESHOLD, "\u5143\u7D20 ".concat(this.nodeName, " \u7684 ").concat(qualifiedName, " \u5C5E\u6027\u503C\u6570\u636E\u91CF\u8FC7\u5927\uFF0C\u53EF\u80FD\u4F1A\u5F71\u54CD\u6E32\u67D3\u6027\u80FD\u3002\u8003\u8651\u964D\u4F4E\u56FE\u7247\u8F6C\u4E3A base64 \u7684\u9608\u503C\u6216\u5728 CSS \u4E2D\u4F7F\u7528 base64\u3002"));
       var isPureView = this.nodeName === VIEW && !isHasExtractProp(this) && !this.isAnyEventBinded();
       if (qualifiedName !== STYLE) {
         MutationObserver$1.record({
@@ -1789,13 +1791,13 @@ var TaroElement = /*#__PURE__*/function (_TaroNode) {
           value: alias
         });
       }
-      (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)(TaroElement, "addEventListener", this, 3)([type, handler, options]);
+      (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)(TaroElement, "addEventListener", this, 3)([type, handler, options]);
     }
   }, {
     key: "removeEventListener",
     value: function removeEventListener(type, handler) {
       var sideEffect = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-      (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)(TaroElement, "removeEventListener", this, 3)([type, handler]);
+      (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)(TaroElement, "removeEventListener", this, 3)([type, handler]);
       var name = this.nodeName;
       var SPECIAL_NODES = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .hooks */ .JL.call('getSpecialNodes');
       _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .hooks */ .JL.call('modifyRemoveEventListener', this, sideEffect, getComponentsAlias);
@@ -1902,12 +1904,12 @@ function isWordEnd(cursor, wordBegin, html) {
 }
 var Scaner = /*#__PURE__*/function () {
   function Scaner(html) {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, Scaner);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, Scaner);
     this.tokens = [];
     this.position = initPosition();
     this.html = html;
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(Scaner, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(Scaner, [{
     key: "scan",
     value: function scan() {
       var html = this.html,
@@ -2193,10 +2195,10 @@ var GENERAL_SIBLING_COMBINATOR = '~';
 var ADJACENT_SIBLING_COMBINATOR = '+';
 var StyleTagParser = /*#__PURE__*/function () {
   function StyleTagParser() {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, StyleTagParser);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, StyleTagParser);
     this.styles = [];
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(StyleTagParser, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(StyleTagParser, [{
     key: "extractStyle",
     value: function extractStyle(src) {
       var _this10 = this;
@@ -2262,7 +2264,7 @@ var StyleTagParser = /*#__PURE__*/function () {
         // 属性选择器
         item = item.replace(/\[(.+?)\]/g, function (_, $1) {
           var _$1$split = $1.split('='),
-            _$1$split2 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_$1$split, 2),
+            _$1$split2 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_$1$split, 2),
             key = _$1$split2[0],
             value = _$1$split2[1];
           var all = $1.indexOf('=') === -1;
@@ -2504,7 +2506,7 @@ function attributesArray2Props(attributes) {
   for (var i = 0; i < attributes.length; i++) {
     var attr = attributes[i];
     var _splitEqual = splitEqual(attr),
-      _splitEqual2 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_splitEqual, 2),
+      _splitEqual2 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_splitEqual, 2),
       key = _splitEqual2[0],
       value = _splitEqual2[1];
     props[key] = value == null ? true : unquote(value);
@@ -2567,7 +2569,7 @@ function format(children, document, styleOptions, parent) {
       for (var i = 0; i < child.attributes.length; i++) {
         var attr = child.attributes[i];
         var _splitEqual3 = splitEqual(attr),
-          _splitEqual4 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_splitEqual3, 2),
+          _splitEqual4 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_splitEqual3, 2),
           key = _splitEqual4[0],
           value = _splitEqual4[1];
         if (key === 'width' || key === 'height') {
@@ -2592,7 +2594,7 @@ function format(children, document, styleOptions, parent) {
     for (var _i4 = 0; _i4 < child.attributes.length; _i4++) {
       var _attr = child.attributes[_i4];
       var _splitEqual5 = splitEqual(_attr),
-        _splitEqual6 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_splitEqual5, 2),
+        _splitEqual6 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_splitEqual5, 2),
         _key2 = _splitEqual6[0],
         _value = _splitEqual6[1];
       if (_key2 === 'class') {
@@ -2858,7 +2860,7 @@ if (true) {
 // Taro 事件对象。以 Web 标准的事件对象为基础，加入小程序事件对象中携带的部分信息，并模拟实现事件冒泡。
 var TaroEvent = /*#__PURE__*/function () {
   function TaroEvent(type, opts, event) {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroEvent);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroEvent);
     this._stop = false;
     this._end = false;
     this.defaultPrevented = false;
@@ -2872,7 +2874,7 @@ var TaroEvent = /*#__PURE__*/function () {
     this.bubbles = Boolean(opts && opts.bubbles);
     this.cancelable = Boolean(opts && opts.cancelable);
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroEvent, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroEvent, [{
     key: "stopPropagation",
     value: function stopPropagation() {
       this._stop = true;
@@ -3014,11 +3016,11 @@ function eventHandler(event) {
 }
 var FormElement = /*#__PURE__*/function (_TaroElement) {
   function FormElement() {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, FormElement);
-    return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, FormElement, arguments);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, FormElement);
+    return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, FormElement, arguments);
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(FormElement, _TaroElement);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(FormElement, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(FormElement, _TaroElement);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(FormElement, [{
     key: "type",
     get: function get() {
       var _a;
@@ -3051,16 +3053,16 @@ var FormElement = /*#__PURE__*/function (_TaroElement) {
           this.value = val;
         }
       }
-      return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)(FormElement, "dispatchEvent", this, 3)([event]);
+      return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)(FormElement, "dispatchEvent", this, 3)([event]);
     }
   }]);
 }(TaroElement);
 var Performance = /*#__PURE__*/function () {
   function Performance() {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, Performance);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, Performance);
     this.recorder = new Map();
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(Performance, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(Performance, [{
     key: "start",
     value: function start(id) {
       if (!options.debug) {
@@ -3121,8 +3123,8 @@ function findCustomWrapper(root, dataPathArr) {
 var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
   function TaroRootElement() {
     var _this14;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroRootElement);
-    _this14 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroRootElement);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroRootElement);
+    _this14 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroRootElement);
     _this14.updatePayloads = [];
     _this14.updateCallbacks = [];
     _this14.pendingUpdate = false;
@@ -3131,8 +3133,8 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
     _this14.tagName = ROOT_STR.toUpperCase();
     return _this14;
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroRootElement, _TaroElement2);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroRootElement, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroRootElement, _TaroElement2);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroRootElement, [{
     key: "_path",
     get: function get() {
       return ROOT_STR;
@@ -3206,7 +3208,7 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
               var customWrapper = found.customWrapper,
                 splitedPath = found.splitedPath;
               // 合并同一个 customWrapper 的相关更新到一次 setData 中
-              customWrapperMap.set(customWrapper, Object.assign(Object.assign({}, customWrapperMap.get(customWrapper) || {}), (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, "i.".concat(splitedPath), data[p])));
+              customWrapperMap.set(customWrapper, Object.assign(Object.assign({}, customWrapperMap.get(customWrapper) || {}), (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, "i.".concat(splitedPath), data[p])));
             } else {
               // 此项数据使用页面去更新
               normalUpdate[p] = data[p];
@@ -3227,13 +3229,19 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
         // custom-wrapper setData
         if (customWrapperCount) {
           customWrapperMap.forEach(function (data, ctx) {
-            if (false) {}
+            if ( true && options.debug) {
+              // eslint-disable-next-line no-console
+              console.log('custom wrapper setData: ', data);
+            }
             ctx.setData(data, cb);
           });
         }
         // page setData
         if (isNeedNormalUpdate) {
-          if (false) {}
+          if ( true && options.debug) {
+            // eslint-disable-next-line no-console
+            console.log('page setData:', normalUpdate);
+          }
           ctx.setData(normalUpdate, cb);
         }
       }, 0);
@@ -3261,15 +3269,15 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
 var TaroText = /*#__PURE__*/function (_TaroNode2) {
   function TaroText(value) {
     var _this16;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroText);
-    _this16 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroText);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroText);
+    _this16 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroText);
     _this16.nodeType = 3 /* NodeType.TEXT_NODE */;
     _this16.nodeName = '#text';
     _this16._value = value;
     return _this16;
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroText, _TaroNode2);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroText, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroText, _TaroNode2);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroText, [{
     key: "textContent",
     get: function get() {
       return this._value;
@@ -3334,7 +3342,7 @@ function encode(str) {
 }
 var URLSearchParams =  false ? 0 : (_a = /*#__PURE__*/function () {
   function _a(query) {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, _a);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, _a);
     _dict.set(this, Object.create(null));
     query !== null && query !== void 0 ? query : query = '';
     var dict = (0,tslib__WEBPACK_IMPORTED_MODULE_13__/* .__classPrivateFieldGet */ .gn)(this, _dict, "f");
@@ -3353,7 +3361,9 @@ var URLSearchParams =  false ? 0 : (_a = /*#__PURE__*/function () {
             appendTo(dict, decode(value), '');
           }
         } catch (err) {
-          if (false) {}
+          if (true) {
+            console.warn("[Taro warn] URL \u53C2\u6570 ".concat(value, " decode \u5F02\u5E38"));
+          }
         }
       }
     } else {
@@ -3371,7 +3381,7 @@ var URLSearchParams =  false ? 0 : (_a = /*#__PURE__*/function () {
       }
     }
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(_a, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(_a, [{
     key: "append",
     value: function append(name, value) {
       appendTo((0,tslib__WEBPACK_IMPORTED_MODULE_13__/* .__classPrivateFieldGet */ .gn)(this, _dict, "f"), name, value);
@@ -3441,7 +3451,7 @@ var URLSearchParams =  false ? 0 : (_a = /*#__PURE__*/function () {
 var _TaroURL_hash, _TaroURL_hostname, _TaroURL_pathname, _TaroURL_port, _TaroURL_protocol, _TaroURL_search;
 var TaroURL = /*#__PURE__*/function () {
   function TaroURL(url, base) {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroURL);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroURL);
     /* private property */
     _TaroURL_hash.set(this, '');
     _TaroURL_hostname.set(this, '');
@@ -3465,7 +3475,7 @@ var TaroURL = /*#__PURE__*/function () {
     (0,tslib__WEBPACK_IMPORTED_MODULE_13__/* .__classPrivateFieldSet */ .GG)(this, _TaroURL_search, new URLSearchParams(search), "f");
   }
   /* public property */
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroURL, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroURL, [{
     key: "protocol",
     get: function get() {
       return (0,tslib__WEBPACK_IMPORTED_MODULE_13__/* .__classPrivateFieldGet */ .gn)(this, _TaroURL_protocol, "f");
@@ -3688,11 +3698,11 @@ function parseUrlBase(url, base) {
 }
 var AnchorElement = /*#__PURE__*/function (_TaroElement3) {
   function AnchorElement() {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, AnchorElement);
-    return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, AnchorElement, arguments);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, AnchorElement);
+    return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, AnchorElement, arguments);
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(AnchorElement, _TaroElement3);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(AnchorElement, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(AnchorElement, _TaroElement3);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(AnchorElement, [{
     key: "href",
     get: function get() {
       var _a;
@@ -3749,10 +3759,10 @@ var AnchorElement = /*#__PURE__*/function (_TaroElement3) {
       if (qualifiedName === "href" /* AnchorElementAttrs.HREF */) {
         var willSetAttr = parseUrl(value);
         for (var k in willSetAttr) {
-          (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)(AnchorElement, "setAttribute", this, 3)([k, willSetAttr[k]]);
+          (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)(AnchorElement, "setAttribute", this, 3)([k, willSetAttr[k]]);
         }
       } else {
-        (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)(AnchorElement, "setAttribute", this, 3)([qualifiedName, value]);
+        (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A)(AnchorElement, "setAttribute", this, 3)([qualifiedName, value]);
       }
     }
   }]);
@@ -3760,14 +3770,14 @@ var AnchorElement = /*#__PURE__*/function (_TaroElement3) {
 var TransferElement = /*#__PURE__*/function (_TaroElement4) {
   function TransferElement(dataName) {
     var _this17;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TransferElement);
-    _this17 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TransferElement);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TransferElement);
+    _this17 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TransferElement);
     _this17.dataName = dataName;
     _this17.isTransferElement = true;
     return _this17;
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TransferElement, _TaroElement4);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TransferElement, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TransferElement, _TaroElement4);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TransferElement, [{
     key: "_path",
     get: function get() {
       return this.dataName;
@@ -3777,15 +3787,15 @@ var TransferElement = /*#__PURE__*/function (_TaroElement4) {
 var TaroDocument = /*#__PURE__*/function (_TaroElement5) {
   function TaroDocument() {
     var _this18;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroDocument);
-    _this18 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroDocument);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroDocument);
+    _this18 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroDocument);
     _this18.createEvent = createEvent;
     _this18.nodeType = 9 /* NodeType.DOCUMENT_NODE */;
     _this18.nodeName = DOCUMENT_ELEMENT_NAME;
     return _this18;
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroDocument, _TaroElement5);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroDocument, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroDocument, _TaroElement5);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroDocument, [{
     key: "createElement",
     value: function createElement(type) {
       var nodeName = type.toLowerCase();
@@ -3902,11 +3912,11 @@ var eventCenter = _tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .hooks */ .JL.ca
  */
 var RuntimeCache = /*#__PURE__*/function () {
   function RuntimeCache(name) {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, RuntimeCache);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, RuntimeCache);
     this.cache = new Map();
     this.name = name;
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(RuntimeCache, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(RuntimeCache, [{
     key: "has",
     value: function has(identifier) {
       return this.cache.has(identifier);
@@ -3935,8 +3945,8 @@ var cache$1 = new RuntimeCache('history');
 var TaroHistory = /*#__PURE__*/function (_Events) {
   function TaroHistory(location, options) {
     var _this19;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroHistory);
-    _this19 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroHistory);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroHistory);
+    _this19 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroHistory);
     _TaroHistory_instances.add(_this19);
     /* private property */
     _TaroHistory_location.set(_this19, void 0);
@@ -3984,8 +3994,8 @@ var TaroHistory = /*#__PURE__*/function (_Events) {
     return _this19;
   }
   /* public property */
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroHistory, _Events);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroHistory, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroHistory, _Events);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroHistory, [{
     key: "length",
     get: function get() {
       return (0,tslib__WEBPACK_IMPORTED_MODULE_13__/* .__classPrivateFieldGet */ .gn)(this, _TaroHistory_stack, "f").length;
@@ -4072,8 +4082,8 @@ var cache = new RuntimeCache('location');
 var TaroLocation = /*#__PURE__*/function (_Events2) {
   function TaroLocation(options) {
     var _this20;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroLocation);
-    _this20 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroLocation);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroLocation);
+    _this20 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroLocation);
     _TaroLocation_instances.add(_this20);
     /* private property */
     _TaroLocation_url.set(_this20, new URL(INIT_URL));
@@ -4114,8 +4124,8 @@ var TaroLocation = /*#__PURE__*/function (_Events2) {
     return _this20;
   }
   /* public property */
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroLocation, _Events2);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroLocation, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroLocation, _Events2);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroLocation, [{
     key: "protocol",
     get: function get() {
       return (0,tslib__WEBPACK_IMPORTED_MODULE_13__/* .__classPrivateFieldGet */ .gn)(this, _TaroLocation_url, "f").protocol;
@@ -4375,13 +4385,13 @@ var _caf = typeof cancelAnimationFrame !== 'undefined' && cancelAnimationFrame !
 var TaroWindow = /*#__PURE__*/function (_Events3) {
   function TaroWindow() {
     var _this21;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroWindow);
-    _this21 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroWindow);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, TaroWindow);
+    _this21 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, TaroWindow);
     _this21.navigator = nav;
     _this21.requestAnimationFrame = _raf;
     _this21.cancelAnimationFrame = _caf;
     _this21.getComputedStyle = getComputedStyle;
-    var globalProperties = [].concat((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(Object.getOwnPropertyNames(__webpack_require__.g || {})), (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(Object.getOwnPropertySymbols(__webpack_require__.g || {})));
+    var globalProperties = [].concat((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(Object.getOwnPropertyNames(__webpack_require__.g || {})), (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(Object.getOwnPropertySymbols(__webpack_require__.g || {})));
     globalProperties.forEach(function (property) {
       if (property === 'atob' || property === 'document') return;
       if (!Object.prototype.hasOwnProperty.call(_this21, property)) {
@@ -4389,7 +4399,9 @@ var TaroWindow = /*#__PURE__*/function (_Events3) {
         try {
           _this21[property] = __webpack_require__.g[property];
         } catch (e) {
-          if (false) {}
+          if (true) {
+            console.warn("[Taro warn] window.".concat(String(property), " \u5728\u8D4B\u503C\u5230 window \u65F6\u62A5\u9519"));
+          }
         }
       }
     });
@@ -4405,8 +4417,8 @@ var TaroWindow = /*#__PURE__*/function (_Events3) {
     _this21.initEvent();
     return _this21;
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroWindow, _Events3);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroWindow, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(TaroWindow, _Events3);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(TaroWindow, [{
     key: "initEvent",
     value: function initEvent() {
       var _location = this.location;
@@ -4483,11 +4495,11 @@ var history = window$1.history;
 // for Vue3
 var SVGElement = /*#__PURE__*/function (_TaroElement6) {
   function SVGElement() {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, SVGElement);
-    return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, SVGElement, arguments);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(this, SVGElement);
+    return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(this, SVGElement, arguments);
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(SVGElement, _TaroElement6);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(SVGElement);
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(SVGElement, _TaroElement6);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(SVGElement);
 }(TaroElement); // export const removeLeadingSlash = (str = '') => str.replace(/^\.?\//, '')
 // export const removeTrailingSearch = (str = '') => str.replace(/\?[\s\S]*$/, '')
 var addLeadingSlash = function addLeadingSlash() {
@@ -4521,7 +4533,7 @@ var getHomePage = function getHomePage() {
   var _a;
   var routePath = addLeadingSlash(stripBasename(path, basename));
   var alias = ((_a = Object.entries(customRoutes).find(function (_ref3) {
-    var _ref4 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_ref3, 1),
+    var _ref4 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_ref3, 1),
       key = _ref4[0];
     return key === routePath;
   })) === null || _a === void 0 ? void 0 : _a[1]) || routePath;
@@ -4594,7 +4606,7 @@ function getOnHideEventKey(path) {
 function createPageConfig(component, pageName, data, pageConfig) {
   // 小程序 Page 构造器是一个傲娇小公主，不能把复杂的对象挂载到参数上
   var id = pageName !== null && pageName !== void 0 ? pageName : "taro_page_".concat(pageId());
-  var _hooks$call$page = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .hooks */ .JL.call('getMiniLifecycleImpl').page, 7),
+  var _hooks$call$page = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .hooks */ .JL.call('getMiniLifecycleImpl').page, 7),
     ONLOAD = _hooks$call$page[0],
     ONUNLOAD = _hooks$call$page[1],
     ONREADY = _hooks$call$page[2],
@@ -4621,7 +4633,7 @@ function createPageConfig(component, pageName, data, pageConfig) {
   }
   var loadResolver;
   var hasLoaded;
-  var config = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, ONLOAD, function () {
+  var config = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, ONLOAD, function () {
     var _this22 = this;
     var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var cb = arguments.length > 1 ? arguments[1] : undefined;
@@ -4741,7 +4753,7 @@ function createPageConfig(component, pageName, data, pageConfig) {
       var _arguments = arguments,
         _this25 = this;
       var exec = function exec() {
-        return safeExecute.apply(void 0, [_this25.$taroPath, lifecycle].concat((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(_arguments)));
+        return safeExecute.apply(void 0, [_this25.$taroPath, lifecycle].concat((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(_arguments)));
       };
       if (isDefer) {
         hasLoaded.then(exec);
@@ -4781,10 +4793,10 @@ function createPageConfig(component, pageName, data, pageConfig) {
 function createComponentConfig(component, componentName, data) {
   var id = componentName !== null && componentName !== void 0 ? componentName : "taro_component_".concat(pageId());
   var componentElement = null;
-  var _hooks$call$component = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .hooks */ .JL.call('getMiniLifecycleImpl').component, 2),
+  var _hooks$call$component = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .hooks */ .JL.call('getMiniLifecycleImpl').component, 2),
     ATTACHED = _hooks$call$component[0],
     DETACHED = _hooks$call$component[1];
-  var config = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, ATTACHED, function () {
+  var config = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, ATTACHED, function () {
     var _this26 = this;
     var _a;
     perf.start(PAGE_INIT);
@@ -4826,10 +4838,10 @@ function createComponentConfig(component, componentName, data) {
 }
 function createRecursiveComponentConfig(componentName) {
   var isCustomWrapper = componentName === CUSTOM_WRAPPER;
-  var _hooks$call$component2 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .hooks */ .JL.call('getMiniLifecycleImpl').component, 2),
+  var _hooks$call$component2 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .hooks */ .JL.call('getMiniLifecycleImpl').component, 2),
     ATTACHED = _hooks$call$component2[0],
     DETACHED = _hooks$call$component2[1];
-  var lifeCycles = isCustomWrapper ? (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, ATTACHED, function () {
+  var lifeCycles = isCustomWrapper ? (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, ATTACHED, function () {
     var _a, _b;
     var componentId = ((_a = this.data.i) === null || _a === void 0 ? void 0 : _a.sid) || ((_b = this.props.i) === null || _b === void 0 ? void 0 : _b.sid);
     if ((0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .isString */ .Kg)(componentId)) {
@@ -4854,7 +4866,7 @@ function createRecursiveComponentConfig(componentName) {
     properties: {
       i: {
         type: Object,
-        value: (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, "nn" /* Shortcuts.NodeName */, (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .getComponentsAlias */ .dg)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .internalComponents */ .YN)[VIEW]._num)
+        value: (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A)({}, "nn" /* Shortcuts.NodeName */, (0,_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .getComponentsAlias */ .dg)(_tarojs_shared__WEBPACK_IMPORTED_MODULE_0__/* .internalComponents */ .YN)[VIEW]._num)
       },
       l: {
         type: String,
@@ -5679,13 +5691,13 @@ if (true) {
 /* harmony export */   sV: function() { return /* binding */ Events; }
 /* harmony export */ });
 /* unused harmony exports EMPTY_ARR, EventChannel, HOOK_TYPE, PLATFORM_CONFIG_MAP, PLATFORM_TYPE, Shortcuts, TaroHook, TaroHooks, animation, box, cacheDataGet, cacheDataHas, cacheDataSet, focusComponents, getPlatformType, getUniqueKey, hasOwn, indent, isBooleanStringLiteral, isWebPlatform, nestElements, nonsupport, queryToJson, setUniqueKeyToRoute, singleQuote, toKebabCase, touchEvents, unbox, voidElements */
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9394);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9874);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5499);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5501);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2284);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3029);
-/* harmony import */ var F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2901);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9394);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9874);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5499);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5501);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2284);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3029);
+/* harmony import */ var D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2901);
 
 
 
@@ -6159,18 +6171,18 @@ var PLATFORM_CONFIG_MAP = {
 };
 var Events = /*#__PURE__*/function () {
   function Events(opts) {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(this, Events);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(this, Events);
     var _a;
     this.callbacks = (_a = opts === null || opts === void 0 ? void 0 : opts.callbacks) !== null && _a !== void 0 ? _a : {};
   }
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(Events, [{
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(Events, [{
     key: "on",
     value: function on(eventName, callback, context) {
       var event, tail, _eventName;
       if (!callback) {
         return this;
       }
-      if ((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(eventName) === 'symbol') {
+      if ((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(eventName) === 'symbol') {
         _eventName = [eventName];
       } else {
         _eventName = eventName.split(Events.eventSplitter);
@@ -6215,7 +6227,7 @@ var Events = /*#__PURE__*/function () {
         delete this.callbacks;
         return this;
       }
-      if ((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(events) === 'symbol') {
+      if ((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(events) === 'symbol') {
         _events = [events];
       } else {
         _events = events ? events.split(Events.eventSplitter) : Object.keys(calls);
@@ -6244,7 +6256,7 @@ var Events = /*#__PURE__*/function () {
       if (!(calls = this.callbacks)) {
         return this;
       }
-      if ((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(events) === 'symbol') {
+      if ((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(events) === 'symbol') {
         _events = [events];
       } else {
         _events = events.split(Events.eventSplitter);
@@ -6268,20 +6280,20 @@ Events.eventSplitter = ','; // Note: Harmony ACE API 8 开发板不支持使用�
 var PageEvts = /*#__PURE__*/function (_Events) {
   function PageEvts() {
     var _this2;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(this, PageEvts);
-    _this2 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(this, PageEvts, arguments);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(this, PageEvts);
+    _this2 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(this, PageEvts, arguments);
     _this2.exeList = [];
     return _this2;
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(PageEvts, _Events);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(PageEvts, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(PageEvts, _Events);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(PageEvts, [{
     key: "on",
     value: function on(eventName, callback) {
       var _this3 = this;
-      (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(PageEvts, "on", this, 3)([eventName, callback, this]);
+      (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(PageEvts, "on", this, 3)([eventName, callback, this]);
       this.exeList = this.exeList.reduce(function (prev, item) {
         if (item.eventName === eventName) {
-          (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(PageEvts, "trigger", _this3, 3)([item.eventName, item.data]);
+          (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_superPropGet_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A)(PageEvts, "trigger", _this3, 3)([item.eventName, item.data]);
         } else {
           prev.push(item);
         }
@@ -6300,11 +6312,11 @@ var PageEvts = /*#__PURE__*/function (_Events) {
 var pageChannel = new PageEvts();
 var RouteEvts = /*#__PURE__*/function (_Events2) {
   function RouteEvts() {
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(this, RouteEvts);
-    return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(this, RouteEvts, arguments);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(this, RouteEvts);
+    return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(this, RouteEvts, arguments);
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(RouteEvts, _Events2);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(RouteEvts, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(RouteEvts, _Events2);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(RouteEvts, [{
     key: "emit",
     value: function emit(events, data) {
       pageChannel.off(events);
@@ -6317,7 +6329,7 @@ var RouteEvts = /*#__PURE__*/function (_Events2) {
     key: "addEvents",
     value: function addEvents(events) {
       var _this4 = this;
-      if (!events || (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(events) !== 'object') return;
+      if (!events || (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(events) !== 'object') return;
       Object.keys(events).forEach(function (key) {
         _this4.off(key);
         _this4.on(key, events[key], _this4);
@@ -6340,7 +6352,7 @@ function isNull(o) {
   return o === null;
 }
 function isObject(o) {
-  return o !== null && (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(o) === 'object';
+  return o !== null && (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_typeof_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A)(o) === 'object';
 }
 function isBoolean(o) {
   return o === true || o === false;
@@ -6378,8 +6390,8 @@ function TaroHook(type, initial) {
 var TaroHooks = /*#__PURE__*/function (_Events3) {
   function TaroHooks(hooks, opts) {
     var _this5;
-    (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(this, TaroHooks);
-    _this5 = (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(this, TaroHooks, [opts]);
+    (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_classCallCheck_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A)(this, TaroHooks);
+    _this5 = (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_callSuper_js__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)(this, TaroHooks, [opts]);
     _this5.hooks = hooks;
     for (var hookName in hooks) {
       var initial = hooks[hookName].initial;
@@ -6389,8 +6401,8 @@ var TaroHooks = /*#__PURE__*/function (_Events3) {
     }
     return _this5;
   }
-  (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(TaroHooks, _Events3);
-  return (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(TaroHooks, [{
+  (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_inherits_js__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A)(TaroHooks, _Events3);
+  return (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_createClass_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A)(TaroHooks, [{
     key: "tapOneOrMany",
     value: function tapOneOrMany(hookName, callback) {
       var _this6 = this;
@@ -6578,13 +6590,18 @@ var hasOwn = function hasOwn(val, key) {
  */
 function ensure(condition, msg) {
   if (!condition) {
-    if (false) { var reportIssue; } else {
-      throw new Error(msg);
-    }
+    if (true) {
+      var reportIssue = '\n如有疑问，请提交 issue 至：https://github.com/nervjs/taro/issues';
+      throw new Error(msg + reportIssue);
+    } else {}
   }
 }
 function warn(condition, msg) {
-  if (false) {}
+  if (true) {
+    if (condition) {
+      console.warn("[taro warn] ".concat(msg));
+    }
+  }
 }
 function queryToJson(str) {
   var dec = decodeURIComponent;
@@ -6724,7 +6741,9 @@ function getCanIUseWebp(taro) {
     var _a;
     var res = (_a = taro.getSystemInfoSync) === null || _a === void 0 ? void 0 : _a.call(taro);
     if (!res) {
-      if (false) {}
+      if (true) {
+        console.error('不支持 API canIUseWebp');
+      }
       return false;
     }
     var platform = res.platform;
@@ -6772,7 +6791,7 @@ function getNormalRequest(global) {
 function processApis(taro, global) {
   var config = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
   var patchNeedPromiseApis = config.needPromiseApis || [];
-  var _needPromiseApis = new Set([].concat((0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A)(patchNeedPromiseApis), (0,F_medimate_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A)(needPromiseApis)));
+  var _needPromiseApis = new Set([].concat((0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A)(patchNeedPromiseApis), (0,D_PillPal_app_taro_node_modules_babel_runtime_helpers_esm_toConsumableArray_js__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A)(needPromiseApis)));
   var preserved = ['getEnv', 'interceptors', 'Current', 'getCurrentInstance', 'options', 'nextTick', 'eventCenter', 'Events', 'preload', 'webpackJsonp'];
   var apis = new Set(!config.isOnlyPromisify ? Object.keys(global).filter(function (api) {
     return preserved.indexOf(api) === -1;
