@@ -241,15 +241,6 @@ users ──┬── family_user_roles ──┬── families
 | recognition_history        | 395  | OCR识别历史                      |
 | family_statistics          |  —   | 家庭统计视图                     |
 
-### 与原项目差异
-
-| 变更                         | 原因              |
-| ---------------------------- | ----------------- |
-| ➕ refresh_tokens            | 双Token机制       |
-| ➖ data_change_logs + 触发器 | WebSocket替代轮询 |
-| ➖ days_to_expiry / status   | 应用层动态计算    |
-| ➖ 存储过程 / 定时事件       | NestJS @Cron 替代 |
-
 ---
 
 ## API 文档
