@@ -1,4 +1,4 @@
-# PillPal — 家庭药品智能管理系统
+# PillPal — 药丸伙伴
 
 > NestJS + Taro + React + TypeScript 全栈重构版
 
